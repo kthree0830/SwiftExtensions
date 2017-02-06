@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B86EF322F00D7AC80CE9D2723B9A42141323E39A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B86EF322F00D7AC80CE9D2723B9A42141323E39A" : 9223372036854775807,
+    "B988733099D5BDAF6853FB2A121A8396C047E9D2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0F587892-81B9-4B8A-AFC2-E2F947D001BC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B86EF322F00D7AC80CE9D2723B9A42141323E39A" : "SwiftExtensions\/",
+    "B988733099D5BDAF6853FB2A121A8396C047E9D2" : "..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftExtensions",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SwiftExtensions\/SwiftExtensions.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kthree0830\/SwiftExtensions.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B86EF322F00D7AC80CE9D2723B9A42141323E39A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kthree0830\/KQW.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B988733099D5BDAF6853FB2A121A8396C047E9D2"
+    }
+  ]
+}

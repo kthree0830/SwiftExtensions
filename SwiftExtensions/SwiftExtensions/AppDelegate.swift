@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
+import SVProgressHUD
+import AFNetworking
+import UserNotifications
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -42,5 +44,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate {
+    fileprivate func setupAddis() {
+        SVProgressHUD.setMinimumDismissTimeInterval(1.0)
+        AFNetworkActivityIndicatorManager.shared().isEnabled = true
+        
+        if #available(iOS 10.0, *) {
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.badge,.sound,.carPlay]) { (ret, error) in
+                print("\(error)")
+            }
+        } else {
+            let notify = UIUserNotificationSettings(types: [.alert,.badge,.sound], categories: nil)
+            UIApplication.shared.registerUserNotificationSettings(notify)
+        }
+        
+        
+    }
 }
 
