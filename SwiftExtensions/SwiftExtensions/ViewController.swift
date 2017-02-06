@@ -42,7 +42,7 @@ class ViewController: UIViewController {
 
 }
 extension ViewController {
-    fileprivate func setupCustomNavBar() {
+        fileprivate func setupCustomNavBar() {
         title = "11"
         
         //关于navbar的返回融合
@@ -60,3 +60,4 @@ extension ViewController {
     }
 
 }
+
