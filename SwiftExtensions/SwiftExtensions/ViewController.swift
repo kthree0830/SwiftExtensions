@@ -11,7 +11,12 @@ import UIKit
 let SWidth = UIScreen.main.bounds.size.width
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var tableView: UITableView!
 
+    lazy var refreshControl = UIRefreshControl()
+    
     /// 自定义导航条
     lazy var navigationBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: SWidth, height: 64))
     
@@ -23,6 +28,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+        //离屏渲染
+        self.view.layer.drawsAsynchronously = true
+        //栅格化 - 异步绘制后，会生成一张独立的图像,cell在屏幕上滚动的时候，本质滚动这张图片
+        //cell 优化，要尽量减少涂层的数量，相当于就只有一层！
+        //停止滚动后，可以接受坚挺
+        self.view.layer.shouldRasterize = true
+        // 使用 栅格化 必须注意指定分辨率
+        self.view.layer.rasterizationScale = UIScreen.main.scale
+        
+        tableView.addSubview(refreshControl)
     }
 
     override func didReceiveMemoryWarning() {
