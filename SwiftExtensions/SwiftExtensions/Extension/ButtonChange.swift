@@ -39,8 +39,8 @@ class ButtonChange: UIButton {
                 return
         }
         
-        titleLabel.frame = titleLabel.frame.offsetBy(dx: -imageView.bounds.size.width, dy: 0)
-        imageView.frame = imageView.frame.offsetBy(dx: titleLabel.bounds.size.width, dy: 0)
+        titleLabel.frame.origin.x = 0
+        imageView.frame.origin.x = titleLabel.bounds.width
     }
 
 
